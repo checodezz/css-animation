@@ -1,0 +1,50 @@
+body {
+    background-color: darkorange;
+}
+
+div {
+    padding-left: 40%;
+    padding-top: 10%;
+}
+
+.logo1 {
+    position: absolute;
+    width: 10%;
+    animation-name: clockwise;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.logo2 {
+    position: absolute;
+    z-index: -1;
+    width: 342px;
+    animation-name: anticlock;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes clockwise {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anticlock {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
